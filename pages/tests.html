@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Тесты | New.Dem</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="logo">
+New<span>.Dem</span>
+</div>
+
+
+<a href="https://instagram.com/new.dem_" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+<h1>
+Проверь свои знания
+</h1>
+
+<p>
+Пройди тесты по безопасности и правам спортсменов.
+</p>
+
+</section>
+
+
+
+
+
+<section class="section">
+
+
+<h2>
+Тест: безопасность в спорте
+</h2>
+
+
+
+<div class="quiz card">
+
+
+<p>
+1. Что нужно сделать перед тренировкой?
+</p>
+
+
+<label>
+<input type="radio" name="q1" value="1">
+Сделать разминку
+</label>
+
+
+<label>
+<input type="radio" name="q1" value="0">
+Сразу начать нагрузку
+</label>
+
+
+
+<p>
+2. Можно ли скрывать серьезную травму?
+</p>
+
+
+<label>
+<input type="radio" name="q2" value="0">
+Да
+</label>
+
+
+<label>
+<input type="radio" name="q2" value="1">
+Нет, нужно сообщить
+</label>
+
+
+
+
+<p>
+3. Имеет ли спортсмен право на уважение?
+</p>
+
+
+<label>
+<input type="radio" name="q3" value="1">
+Да
+</label>
+
+
+<label>
+<input type="radio" name="q3" value="0">
+Нет
+</label>
+
+
+
+<button onclick="checkQuiz()">
+
+Проверить результат
+
+</button>
+
+
+
+<h3 id="result"></h3>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="contacts">
+
+
+<div class="contact-box">
+
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+
+<div>
+
+<h3>
+Хочешь узнать больше?
+</h3>
+
+<p>
+Изучи разделы New.Dem
+</p>
+
+
+</div>
+
+
+<a href="articles.html">
+Статьи
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+New.Dem © 2026
+</p>
+
+</footer>
+
+
+
+
+
+<script>
+
+function checkQuiz(){
+
+
+let score = 0;
+
+
+let answers = document.querySelectorAll(
+'input[type="radio"]:checked'
+);
+
+
+
+answers.forEach(item=>{
+
+score += Number(item.value);
+
+});
+
+
+
+let result =
+document.getElementById("result");
+
+
+
+if(score===3){
+
+result.innerHTML =
+"🎉 Отлично! Ты хорошо знаешь правила безопасности.";
+
+}
+
+else if(score===2){
+
+result.innerHTML =
+"👍 Хороший результат! Можно узнать больше.";
+
+}
+
+else{
+
+result.innerHTML =
+"📚 Рекомендуем изучить материалы New.Dem.";
+
+}
+
+
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
