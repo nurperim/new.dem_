@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Сообщить о проблеме | New.Dem</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+New<span>.Dem</span>
+</div>
+
+<a href="https://instagram.com/new.dem_" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+</header>
+
+
+
+<section class="report-header">
+
+<h1>
+Сообщить о проблеме
+</h1>
+
+<p>
+Ваше обращение поможет сделать спорт безопаснее.
+</p>
+
+</section>
+
+
+
+
+<section class="form-container">
+
+
+<form action="https://formspree.io/f/mvzepjow"
+method="POST">
+
+
+<label>
+Имя (необязательно)
+</label>
+
+<input 
+type="text"
+name="name"
+placeholder="Введите имя">
+
+
+
+<label>
+Вид спорта
+</label>
+
+<input 
+type="text"
+name="sport"
+placeholder="Например: хоккей">
+
+
+
+<label>
+Категория проблемы
+</label>
+
+
+<select name="category">
+
+
+<option>
+Буллинг
+</option>
+
+
+<option>
+Насилие
+</option>
+
+
+<option>
+Дискриминация
+</option>
+
+
+<option>
+Опасные условия тренировок
+</option>
+
+
+<option>
+Психологическое давление
+</option>
+
+
+<option>
+Другое
+</option>
+
+
+</select>
+
+
+
+<label>
+Опишите ситуацию
+</label>
+
+
+<textarea
+
+name="message"
+
+placeholder="Напишите, что произошло..."
+
+rows="7"
+
+required>
+
+</textarea>
+
+
+
+<label>
+Контакт для ответа (необязательно)
+</label>
+
+
+<input
+
+type="email"
+
+name="email"
+
+placeholder="Ваш Email">
+
+
+
+<button type="submit">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Отправить обращение
+
+</button>
+
+
+
+</form>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+New.Dem © 2026
+</p>
+
+<p>
+Instagram: @new.dem_
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
+/* REPORT PAGE */
+
+
+.report-header{
+
+margin:20px;
+
+padding:40px 25px;
+
+background:
+linear-gradient(135deg,#7657ff,#b18cff);
+
+color:white;
+
+border-radius:30px;
+
+text-align:center;
+
+}
+
+
+
+.report-header h1{
+
+font-size:32px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.form-container{
+
+padding:25px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+
+
+.form-container form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+
+.form-container label{
+
+font-weight:600;
+
+}
+
+
+
+.form-container input,
+.form-container textarea,
+.form-container select{
+
+
+padding:16px;
+
+border-radius:18px;
+
+border:none;
+
+background:white;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.08);
+
+font-size:16px;
+
+}
+
+
+
+.form-container button{
+
+
+padding:17px;
+
+border:none;
+
+border-radius:25px;
+
+background:#7657ff;
+
+color:white;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+
+}
+
+
+
+.form-container button:hover{
+
+transform:translateY(-3px);
+
+background:#6040ed;
+
+}
